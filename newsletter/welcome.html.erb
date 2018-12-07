@@ -18,24 +18,31 @@ h1 {
 </head>
 <body>
   <br>
-  <h1 style="text-align:center;font-size:55px;"><u>EMMA'S</u></h1>
-  <div style="width:100%;">
-    <h3 style="text-align:center;"><u>COOKIES:</u> $3</h3>
+  <h1 style="text-align:center;font-size:55px;margin-bottom:10px;"><u>EMMA'S</u></h1>
+  <div style="text-align:center;">
+    <p style="margin-bottom:0px;">90 John Street 404</p>
+    <p style="margin-bottom:0px;">New York, NY 10038</p>
+    <p style="margin-bottom:0px;">(844) 322 - 2633</p>
+  </div>
+  <br>
+  <br>
+  <div style="width:100%;text-align:center;">
+    <h3><u>COOKIES:</u> $3</h3>
     <% $cookies.each do |cookie| %>
-    <div style="text-align:center;"><h3><%= cookie.description %></h3></div>
+    <div><h3><%= cookie.description %></h3></div>
     <% end %>
     <br>
-    <h3 style="text-align:center;"><u>MUFFINS:</u> $4</h3>
+    <h3><u>MUFFINS:</u> $4</h3>
     <% $muffins.each do |muffin| %>
-    <div style="text-align:center;"><h3><%= muffin.description %></h3></div>
+    <div><h3><%= muffin.description %></h3></div>
     <% end %>
     <br>
-    <h3 style="text-align:center;"><u>CAKES:</u> $5</h3>
+    <h3><u>CAKES:</u> $5</h3>
     <% $cakes.each do |cake| %>
-    <div style="text-align:center;"><h3><%= cake.description %></h3></div>
+    <div><h3><%= cake.description %></h3></div>
     <% end %>
   </div>
   <br>
-
+  <br>
 </body>
 </html>

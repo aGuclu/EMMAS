@@ -3,15 +3,29 @@ body {
   background-color: lightgrey;
 }
 
-#nav {
-  overflow: hidden;
+#nav , #logo, #nav-links, .product img, .end {
   margin-left: auto;
   margin-right: auto;
+}
+
+#nav a, #footer, .footer-links a:link , input[type="submit"]{
+  color: whitesmoke;
+}
+
+#nav a, .card-title, .product, .address p, .end {
+  text-align: center;
+}
+
+#nav, #logo, #navcenter, #nav-links, input[type="submit"] {
+  transition: 0.4s;
+}
+
+#nav {
+  overflow: hidden;
   background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("images/cover_image.jpg") no-repeat;
   background-size:cover;
   background-position: center;
-  padding: 100px 0px;
-  transition: 0.4s;
+  padding: 150px 0px;
   position: fixed;
   width: 100%;
   top: 0;
@@ -21,7 +35,6 @@ body {
 }
 
 #nav a {
-  color: whitesmoke;
   text-align: center;
   padding: 10px;
   text-decoration: none;
@@ -31,12 +44,8 @@ body {
 
 #nav #logo {
   font-family: 'Kumar One Outline', cursive;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   font-size: 55px;
   font-weight: bold;
-  transition: 0.4s;
   letter-spacing: 5px;
 }
 
@@ -47,15 +56,11 @@ body {
 
 #navcenter {
   margin: 0px 30px;
-  transition: 0.4s;
 }
 
 #nav-links {
   margin-top: 10px;
   padding-top: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  transition: 0.4s;
   border-top: 1px solid whitesmoke;
 }
 
@@ -63,39 +68,12 @@ body {
   width: 100%;
   padding: 5vh 0 1vh 0;
   background-color: #333;
-  color: whitesmoke;
 }
 
 #footer h3 {
   text-align: left;
   font-size: 1.3em;
   margin-bottom: 1rem;
-}
-
-.nav-link-box {
-  text-align: left;
-  font-size: .5em;
-  font-size: .7em;
-}
-
-.footer-links a:link {
-  text-decoration: none;
-  color: whitesmoke;
-}
-
-.footer-links {
-  margin-top: 2rem;
-}
-
-.footer-links p {
-  margin-bottom: .2rem;
-}
-
-.footer-links a:hover {
-  font-weight: bold;
-}
-
-.footer-links p , .footer-links a {
 }
 
 @media (max-width: 767.98px) {
@@ -142,11 +120,40 @@ input[type="text"] {
 input[type="submit"] {
   width: 30%;
   background-color: #000;
-  color: whitesmoke;
   border: none;
   margin-left: 5%;
   padding: 10px;
   fontsize: .5em;
+}
+
+input[type="submit"]:hover{
+  background-color: whitesmoke;
+  color: #333;
+}
+
+.nav-link-box {
+  text-align: left;
+  font-size: .5em;
+  font-size: .7em;
+}
+
+.footer-links a:link {
+  text-decoration: none;
+}
+
+.footer-links {
+  margin-top: 2rem;
+}
+
+.footer-links p {
+  margin-bottom: .2rem;
+}
+
+.footer-links a:hover {
+  font-weight: bold;
+}
+
+.footer-links p , .footer-links a {
 }
 
 .nav-container {
@@ -164,8 +171,7 @@ input[type="submit"] {
 }
 
 .card-title {
-  margin-top: 45vh;
-  text-align: center;
+  margin-top: 55vh;
 }
 
 .card-title h2 {
@@ -175,7 +181,6 @@ input[type="submit"] {
 .product {
   display: grid;
   justify-content: center;
-  text-align: center;
 }
 
 .product h3 {
@@ -190,24 +195,14 @@ input[type="submit"] {
 .product img {
   width: 100%;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .address p {
-  margin-bottom: .5rem;
-  text-align: center;
-}
-
-.space {
-  margin-top: 100vh;
+  margin-bottom: 0px;
 }
 
 .end {
   margin: 1rem;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
   color: grey;
   font-size: .7em;
 }
