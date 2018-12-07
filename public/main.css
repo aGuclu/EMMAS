@@ -17,6 +17,7 @@ body {
   top: 0;
   z-index: 99;
   font-size: 15px;
+  box-shadow: 1px 10px 10px darkgrey;
 }
 
 #nav a {
@@ -60,25 +61,73 @@ body {
 
 #footer {
   width: 100%;
-  padding: 100px 0px;
+  padding: 5vh 0 1vh 0;
   background-color: #333;
-  text-align: center;
-}
-
-#footer p {
-  font-size: 1em;
   color: whitesmoke;
 }
 
+#footer h3 {
+  text-align: left;
+  font-size: 1.3em;
+  margin-bottom: 1rem;
+}
+
+.nav-link-box {
+  text-align: left;
+  font-size: .5em;
+  font-size: .7em;
+}
+
+.footer-links a:link {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.footer-links {
+  margin-top: 2rem;
+}
+
+.footer-links p {
+  margin-bottom: .2rem;
+}
+
+.footer-links a:hover {
+  font-weight: bold;
+}
+
+.footer-links p , .footer-links a {
+}
+
 @media (max-width: 767.98px) {
-  #footer p {
+  #footer h3 {
     font-size: .7em;
+  }
+  .footer-links p , .footer-links a {
+    font-size: .5em;
+  }
+  .nav-link-box {
+    width: 33%;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
-  #footer p {
+  #footer h3 {
     font-size: .8em;
+  }
+  .footer-links p , .footer-links a {
+    font-size: .6em;
+  }
+}
+
+@media (max-width: 991.98px) {
+  #footer h3 {
+    font-size: .9em;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  #footer h3 {
+    font-size: 1em;
   }
 }
 
@@ -87,6 +136,7 @@ input[type="text"] {
   padding: 10px;
   border: none;
   fontsize: .5em;
+  box-shadow: 5px 5px 5px lightgrey inset;
 }
 
 input[type="submit"] {
@@ -106,10 +156,20 @@ input[type="submit"] {
 
 .card {
   width: 100%;
-  padding: 10px auto;
-  margin-top: 50vh;
-  margin-bottom: 50vh;
+  padding: 5vh 0px;
+  margin-top: 5vh;
+  margin-bottom: 20vh;
   background-color: whitesmoke;
+  box-shadow: 1px 10px 10px darkgrey;
+}
+
+.card-title {
+  margin-top: 45vh;
+  text-align: center;
+}
+
+.card-title h2 {
+  font-size: 1.3em;
 }
 
 .product {
@@ -134,7 +194,20 @@ input[type="submit"] {
   margin-right: auto;
 }
 
+.address p {
+  margin-bottom: .5rem;
+  text-align: center;
+}
+
 .space {
-  min-height: 100vh;
-  width: 100%;
+  margin-top: 100vh;
+}
+
+.end {
+  margin: 1rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: grey;
+  font-size: .7em;
 }
