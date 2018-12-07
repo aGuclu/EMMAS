@@ -1,0 +1,11 @@
+<div class="card">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <% $cakes.each do |cake| %>
+      <div class="col-sm-2 product"><img src=<%= cake.image%>></img><h3><%= cake.description %></h3><p><%= cake.cost %><p></div>
+      <% end %>
+      <div class="col-sm-3"></div>
+    </div>
+  </div>
+</div>

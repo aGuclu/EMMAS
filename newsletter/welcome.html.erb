@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Kumar+One+Outline|Roboto+Slab" rel="stylesheet">
+<style>
+body {
+  background-color: #333;
+  color: #f5f5f5;
+  font-family: 'Roboto Slab', serif;
+}
+h1 {
+  font-family: 'Kumar One Outline', cursive;
+}
+</style>
+</head>
+<body>
+  <br>
+  <h1 style="text-align:center;font-size:55px;"><u>EMMA'S</u></h1>
+  <div style="width:100%;">
+    <h3 style="text-align:center;"><u>COOKIES:</u> $3</h3>
+    <% $cookies.each do |cookie| %>
+    <div style="text-align:center;"><h3><%= cookie.description %></h3></div>
+    <% end %>
+    <br>
+    <h3 style="text-align:center;"><u>MUFFINS:</u> $4</h3>
+    <% $muffins.each do |muffin| %>
+    <div style="text-align:center;"><h3><%= muffin.description %></h3></div>
+    <% end %>
+    <br>
+    <h3 style="text-align:center;"><u>CAKES:</u> $5</h3>
+    <% $cakes.each do |cake| %>
+    <div style="text-align:center;"><h3><%= cake.description %></h3></div>
+    <% end %>
+  </div>
+  <br>
+
+</body>
+</html>

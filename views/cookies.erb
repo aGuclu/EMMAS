@@ -1,0 +1,11 @@
+<div class="card">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3"></div>
+      <% $cookies.each do |cookie| %>
+      <div class="col-sm-2 product"><img src=<%= cookie.image%>></img><h3><%= cookie.description %></h3><p><%= cookie.cost %><p></div>
+      <% end %>
+      <div class="col-sm-3"></div>
+    </div>
+  </div>
+</div>

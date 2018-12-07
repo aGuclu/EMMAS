@@ -1,0 +1,140 @@
+body {
+  font-family: 'Roboto Slab', serif;
+  background-color: lightgrey;
+}
+
+#nav {
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  background:linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ),url("images/cover_image.jpg") no-repeat;
+  background-size:cover;
+  background-position: center;
+  padding: 100px 0px;
+  transition: 0.4s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+  font-size: 15px;
+}
+
+#nav a {
+  color: whitesmoke;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+#nav #logo {
+  font-family: 'Kumar One Outline', cursive;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 55px;
+  font-weight: bold;
+  transition: 0.4s;
+  letter-spacing: 5px;
+}
+
+#nav a:hover {
+  color: white;
+  font-weight: bold;
+}
+
+#navcenter {
+  margin: 0px 30px;
+  transition: 0.4s;
+}
+
+#nav-links {
+  margin-top: 10px;
+  padding-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: 0.4s;
+  border-top: 1px solid whitesmoke;
+}
+
+#footer {
+  width: 100%;
+  padding: 100px 0px;
+  background-color: #333;
+  text-align: center;
+}
+
+#footer p {
+  font-size: 1em;
+  color: whitesmoke;
+}
+
+@media (max-width: 767.98px) {
+  #footer p {
+    font-size: .7em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  #footer p {
+    font-size: .8em;
+  }
+}
+
+input[type="text"] {
+  width: 60%;
+  padding: 10px;
+  border: none;
+  fontsize: .5em;
+}
+
+input[type="submit"] {
+  width: 30%;
+  background-color: #000;
+  color: whitesmoke;
+  border: none;
+  margin-left: 5%;
+  padding: 10px;
+  fontsize: .5em;
+}
+
+.nav-container {
+  display: grid;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  padding: 10px auto;
+  margin-top: 50vh;
+  margin-bottom: 50vh;
+  background-color: whitesmoke;
+}
+
+.product {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
+
+.product h3 {
+  font-size: 1em;
+}
+
+.product p {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.space {
+  min-height: 100vh;
+  width: 100%;
+}
